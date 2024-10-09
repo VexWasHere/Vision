@@ -1,0 +1,24 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Face landmark detection</title>
+    <script src="emotions.js" type="module" defer></script>
+    <script src="https://unpkg.com/@api.video/player-sdk" defer></script>
+  </head>
+  <body>
+    <h1>My facial expression detection app</h1>
+    <div id="video" style="height: 380px"></div>
+    <video id="webcam" style="display: none" autoplay></video>
+    <ul
+      id="detection-results"
+      style="
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 20px;
+      "
+    />
+  </body>
+</html>
